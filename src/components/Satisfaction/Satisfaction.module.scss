@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.satisfaction {
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 495rem;
+
+  padding: 60rem;
+
+  &__head {
+    font-size: 89rem;
+    line-height: 1;
+    letter-spacing: -0.06rem;
+    font-weight: 500;
+  }
+
+  &__indicators {
+    font-size: 34rem;
+    line-height: 1;
+  }
+
+  @media (max-width: 1440px) {
+    height: 100%;
+  }
+  @media (max-width: 576px) {
+    border-radius: 0;
+  }
+}
+
+.satisfied {
+  background: $color-green;
+}
+
+.unsatisfied {
+  background: $color-red;
+}
